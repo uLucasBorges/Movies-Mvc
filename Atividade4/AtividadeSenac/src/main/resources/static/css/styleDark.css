@@ -1,0 +1,157 @@
+
+/* Body e Fundo */
+*{color: white;}
+
+body {
+    background-color: #333; /* Fundo escuro */
+    color: #fff; /* Texto claro */
+}
+
+/* Formulário */
+.container {
+    background-color: #444; /* Fundo do contêiner do formulário */
+    color: #fff; /* Cor do texto no formulário */
+}
+
+/* Inputs e Select */
+input[type="text"],
+input[type="date"],
+select {
+    background-color: #555; /* Fundo dos campos de texto e seleção */
+    color: #fff; /* Cor do texto nos campos de texto e seleção */
+    border-color: #666; /* Cor da borda dos campos de texto e seleção */
+}
+
+
+/* Links */
+a {
+    color: #007bff; /* Cor dos links */
+}
+
+/* Estilos adicionais conforme necessário */
+/* ... */
+/* Dark Theme CSS */
+
+/* Cor de fundo escura para o corpo */
+body {
+    background-color: #121212;
+    color: #ffffff; /* Cor do texto */
+}
+
+/* Modifica as cores dos elementos do formulário */
+.form-control {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #444;
+}
+
+
+
+
+
+/* Modifica a cor dos labels e textos */
+.label,
+.control-label {
+    color: #ffffff;
+}
+
+/* Modifica a cor dos links */
+a {
+    color: #ffffff;
+}
+
+/* Dark Theme CSS */
+
+/* Cor de fundo escura para o corpo */
+body {
+    background-color: #121212;
+    color: #ffffff; /* Cor do texto */
+}
+
+/* Modifica as cores dos elementos da tabela */
+.table {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+
+
+
+
+
+/* Input desabilitado com cor preta */
+input.form-control:disabled {
+    background-color:  #333; /* Cor do texto cinza claro para select desabilitado * /* Cor de fundo preta para input desabilitado */
+    color: #ffffff; /* Cor do texto branco para input desabilitado */
+}
+
+select.form-control:disabled {
+    background-color:  #333; /* Cor do texto cinza claro para select desabilitado */
+; /* Cor de fundo preta para select desabilitado */
+    color: #ffffff; /* Cor do texto branco para select desabilitado */
+}
+
+/* Modifica as cores dos elementos do formulário */
+.form-control {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #555; /* Cor da borda */
+}
+
+
+
+/* Dark Theme CSS */
+
+/* Cor de fundo escura para o corpo */
+body {
+    background-color: #121212;
+    color: #ffffff; /* Cor do texto */
+}
+
+/* Modifica as cores dos elementos do formulário */
+.form-control {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #555; /* Cor da borda */
+}
+
+
+
+/* Modifica o estilo do título principal */
+h1.text-primary {
+    color: #ffbb00; /* Cor do título */
+}
+
+/* Modifica a cor do texto de perigo */
+.text-danger {
+    color: #ff5555; /* Cor do texto de perigo */
+}
+
+
+/* Dark Theme CSS */
+
+/* Cor de fundo escura para o corpo */
+body {
+    background-color: #121212;
+    color: #ffffff; /* Cor do texto */
+}
+
+/* Modifica as cores dos elementos do formulário */
+.form-control {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #555; /* Cor da borda */
+}
+
+
+
+
+/* Modifica o estilo do título principal */
+h1.text-primary {
+    color: #ffbb00; /* Cor do título */
+}
+
+/* Modifica a cor do texto de perigo */
+.text-danger {
+    color: #ff0000; /* Cor do texto de perigo */
+}

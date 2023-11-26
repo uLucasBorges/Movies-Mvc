@@ -1,0 +1,104 @@
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+     <link th:href="@{/css/}+${css}+'.css'" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>
+
+  <br/>
+  <br/>
+  <div class="container p-4 border">
+      <div class="row pb-2">
+          <div class="col">
+              <h1 class="text-primary"> Filme - Detalhe</h1>
+          </div>
+        
+      </div>
+      
+      
+      
+      
+      
+        <div>
+        <div class="form-group row">
+            <label for="id" class="col-sm-2 col-form-label">Código</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control"  th:value="${filme.id}" disabled>
+
+            </div>
+          </div>
+        <div class="form-group row">
+          <label for="titulo" class="col-sm-2 col-form-label">Titulo</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control"  name="titulo"  th:value="${filme.titulo}" disabled>
+          </div>
+        </div>
+        <div class="form-group row">
+            <label for="sinopse" class="col-sm-2 col-form-label">Sinopse</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control"  name="sinopse" th:value="${filme.sinopse}" disabled>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="genero" class="col-sm-2 col-form-label">Genêro</label>
+            <div class="col-sm-10">
+                <select class="form-control"  name="genero"  disabled>
+                   <option value="acao" th:selected="${filme.genero == 'acao'}">Ação</option>
+                   <option value="aventura" th:selected="${filme.genero == 'aventura'}">Aventura</option>
+                   <option value="comedia" th:selected="${filme.genero == 'comedia'}">Comédia</option>
+                   <option value="drama" th:selected="${filme.genero == 'drama'}">Drama</option>
+                   <option value="terror" th:selected="${filme.genero == 'terror'}">Terror</option>
+                   <option value="animacao" th:selected="${filme.genero == 'animacao'}">Animação</option>
+                   <option value="ficcao" th:selected="${filme.genero == 'ficcao'}">Ficção Científica</option>
+                   <option value="documentario" th:selected="${filme.genero == 'documentario'}">Documentário</option>                    
+                  </select>           
+                 </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="anoLancamento" class="col-sm-2 col-form-label">Ano de Lançamento</label>
+            <div class="col-sm-10">
+              <input type="date" class="form-control" name="anoLancamento"  th:value="${filme.anoLancamento}" required disabled>
+            </div>
+          </div>
+
+  
+            <br>
+
+           <td>
+               
+               <a>   
+               <form th:action="@{/apagar/{id}(id=${filme.id})}" method="post">
+               <button type="submit" class="btn btn-danger">Apagar</button>
+               </a>
+                     <form  action="/atualizar" method="post"  th:object="${filme}" >
+
+         
+               <a class="btn btn-success" th:href="@{/analise/{id}(id=${filme.id})}">
+                  <i class="fas fa-plus"></i> Adicionar Análise
+              </a>
+            
+  
+      
+            <a class="btn btn-primary" th:href="@{/atualizar/{id}(id=${filme.id})}">
+                  <i class="fas fa-plus"></i>Editar
+            </a>
+     
+       
+            <a class="btn btn-secondary" href="http://localhost:8080/">
+                  <i class="fas fa-plus"></i>Voltar
+             </a>
+          
+     
+          
+      </div>
+  </div>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+*{    font-family: sans-serif;
+}
+.cabecalho{
+    width: 100%;
+    position: absolute;
+    height: 26%;
+    background-color:#16164f;
+    left: 0%;
+    top: 0%;
+}
+
+.title{
+    top: 20%;
+    position: relative;
+    /* justify-items: center; */
+    justify-content: center;
+    display: flex;
+    color: white;
+}
+
+.title2{
+    top: 34%;
+    position: absolute;
+    /* justify-items: center; */
+    /* justify-content: center; */
+    /* display: inline; */
+    font-family: sans-serif;
+    color: #16164f;
+    left: 44%;
+}
+button a { 
+    color: currentColor;
+       text-decoration: none;
+ }
+
+
+
+.test{
+    float: left;
+    height: 0;
+    width: 100%;
+    display: flex;
+    margin-top: 20%;
+    margin-left: 35%;
+
+}
+
+.testing{
+    position: relative;
+}
+
+.test2{
+    float: left;
+    height: 0;
+    width: 100%;
+    display: block;
+    margin-top: 16%;
+    /* left: -7%; */
+    margin-left: 10%;
+    /* position: absolute;*/
+}
+
